@@ -4,7 +4,7 @@ Utility for showing a navigation progress indicator in SvelteKit.
 
 ### Before and After Demo
 
-Before and after shown with a 3s page load delay.
+Before and after shown with an artificial 3s page load delay.
 
 <img src="https://github.com/scosman/sveltekit-navigation-loader/assets/848343/10cc4b33-3c5d-4dd9-846d-718570db2cef" width="400">
 
