@@ -1,12 +1,18 @@
 # Sveltekit Navigation Progress Indicator
 
-Utility for showing loading progress to a user in SvelteKit. 
+Utility for showing a navigation progress indicator in SvelteKit. 
+
+### Demo
+
+This video shows a demo of this project. See bottom for an example of the problem without this project's solution.
+
+https://github.com/scosman/sveltekit-navigation-loader/assets/848343/cac9e21d-55b9-4d56-93be-1b33aefbc039
 
 ### Why
 
-SvelteKit include an awesome feature called [preloading](https://kit.svelte.dev/docs/link-options). It fetches the code and data for the next page before you even click the link, often leading to instantaneous rendering for the user. 
+SvelteKit include an awesome feature called [preloading](https://kit.svelte.dev/docs/link-options). It fetches the code and data for the next page before you even click the link, often leading to instantaneous rendering for the user. It does so by replacing the DOM content instead of doing a full page load.
 
-However there is one big downside: if there is a delay, the user has no visual indication the content is loading. Had we initiated a full page load, the browser itself would shows a loading indicator; since SvelteKit is just requesting the content via Javascript without reloading the page, the browser doesn't know to show it and the user is left waiting.
+However there is one big downside: if there is a delay, the user has no visual indication the content is loading. Had we initiated a full page load, the browser itself would shows a loading indicator; since SvelteKit is just requesting the content via Javascript, the browser doesn't know to show an indicator and the user is left hanging.
 
 For short delays there's an uncanny valley where the page seems unresponsive (even though it likely renders the next page faster than a traditional page load). Long delays leave the user wondering if the system registered their click at all.
 
@@ -20,3 +26,9 @@ It animates a single small progress div while a navigation is happening. It is r
 
  - 100ms delay is helpful so it doesn't render for instant page loads, and only when there is a real user perceptible delay
  - The exponential easing is quite helpful. Short loads still see meaningful bar progress, while long page loads still see motion until the end
+
+### Demo of the Problem
+
+Here's an example of the problem (page load slowed down to 3s):
+
+https://github.com/scosman/sveltekit-navigation-loader/assets/848343/575a5776-fd5f-4147-9269-a89a44493693
