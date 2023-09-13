@@ -4,7 +4,7 @@ Utility for showing a navigation progress indicator in SvelteKit.
 
 ### Demo
 
-This video shows a demo of this project. See bottom for an example of the problem without this project's solution.
+This video shows a demo of this project embedded in a larger page. See bottom for an example of the problem without this project's solution.
 
 https://github.com/scosman/sveltekit-navigation-loader/assets/848343/cac9e21d-55b9-4d56-93be-1b33aefbc039
 
