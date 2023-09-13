@@ -10,7 +10,7 @@ https://github.com/scosman/sveltekit-navigation-loader/assets/848343/cac9e21d-55
 
 ### Why
 
-SvelteKit include an awesome feature called [preloading](https://kit.svelte.dev/docs/link-options). It fetches the code and data for the next page before you even click the link, often leading to instantaneous rendering for the user. It does so by replacing the DOM content instead of doing a full page load.
+SvelteKit includes an awesome feature called [preloading](https://kit.svelte.dev/docs/link-options). It fetches the code and data for the next page before you even click the link, often leading to instantaneous rendering for the user. It does so by prefetching content via Javascript, then replacing the DOM content instead of doing a full page load.
 
 However there is one big downside: if there is a delay, the user has no visual indication the content is loading. Had we initiated a full page load, the browser itself would shows a loading indicator; since SvelteKit is just requesting the content via Javascript, the browser doesn't know to show an indicator and the user is left hanging.
 
@@ -20,7 +20,7 @@ For short delays there's an uncanny valley where the page seems unresponsive (ev
 
 The included `+layout.svelte` can be included in your `src/routes/` directory to add a visual indicator while the page is navigating. It's similar to the the the loading indicator used on YouTube. 
 
-It animates a single small progress div while a navigation is happening. It is rendered in a fixed position at the top of your page so it should have minimal chance of clashing with existing styles/design (but obviously please check that). As soon at the navigation finishes it disappears.
+It animates a single small progress div while a navigation is happening. It is rendered in a fixed position at the top of your page so it likely won't clash with existing styles/design (but obviously please check that). As soon at the navigation finishes it disappears.
 
 ### Design Notes
 
