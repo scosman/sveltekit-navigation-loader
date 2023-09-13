@@ -20,7 +20,7 @@ For short delays there's an uncanny valley where the page seems unresponsive (ev
 
 ### Solution
 
-The included `+layout.svelte` can be included in your `src/routes/` directory to add a visual indicator while the page is navigating. It's similar to the the the loading indicator used on YouTube. 
+The included `+layout.svelte` can be included in your `src/routes/` directory to add a visual indicator while the page is navigating. It's similar to the loading indicator used on Github and YouTube. 
 
 It animates a single small progress div while a navigation is happening. It is rendered in a fixed position at the top of your page so it likely won't clash with existing styles/design (but obviously please check that). As soon at the navigation finishes it disappears.
 
