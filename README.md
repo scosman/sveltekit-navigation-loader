@@ -6,7 +6,7 @@ Utility for showing a navigation progress indicator in SvelteKit.
 
 This video shows a demo of this project embedded in a larger page. See bottom for an example of the problem without this project's solution.
 
-https://github.com/scosman/sveltekit-navigation-loader/assets/848343/cac9e21d-55b9-4d56-93be-1b33aefbc039
+![after_gif](https://github.com/scosman/sveltekit-navigation-loader/assets/848343/e102d331-166f-4a21-82eb-b918116e312d)
 
 ### Why
 
@@ -31,4 +31,6 @@ It animates a single small progress div while a navigation is happening. It is r
 
 Here's an example of the problem (page load slowed down to 3s):
 
-https://github.com/scosman/sveltekit-navigation-loader/assets/848343/575a5776-fd5f-4147-9269-a89a44493693
+![before_gif](https://github.com/scosman/sveltekit-navigation-loader/assets/848343/10cc4b33-3c5d-4dd9-846d-718570db2cef)
+
+
